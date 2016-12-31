@@ -1,0 +1,39 @@
+{
+  "name": "start-webpack-dev-server",
+  "version": "0.1.0",
+  "description": "Webpack dev-server task for Start",
+  "keywords": [
+    "start",
+    "start-task",
+    "webpack"
+  ],
+  "homepage": "https://github.com/start-runner/webpack-dev-server",
+  "repository": "start-runner/webpack-dev-server",
+  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
+  "files": [
+    "build/"
+  ],
+  "main": "build/index.js",
+  "dependencies": {
+    "webpack": ">=2.2.0-rc.3 <3.0.0",
+    "webpack-dev-server": ">=2.2.0-rc.0 <3.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-start": "^0.1.0",
+    "eslint-config-tough": "^0.3.3",
+    "husky": "^0.12.0",
+    "sinon": "^1.17.7",
+    "start-babel-cli": "^4.0.1",
+    "start-start-preset": "^3.0.0",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "start": "start-runner -p start-start-preset",
+    "prepush": "yarn start prepush",
+    "prepublish": "yarn start build"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT"
+}

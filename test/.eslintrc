@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "tough/config/test"
+  ]
+}
